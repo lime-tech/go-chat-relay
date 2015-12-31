@@ -1,0 +1,5 @@
+* To be done
+  - [ ] Database storage for messages
+  - [ ] Dynamic filters(probably LUA or some other scripting language)
+* Bugs
+  - [ ] Flow circular loop message loss problem

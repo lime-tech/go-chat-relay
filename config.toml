@@ -1,0 +1,25 @@
+[Plug.Foo]
+Type = "irc"
+Channels = ["#foo", "#foo2"]
+[Plug.Foo.Connection]
+Addr = "127.0.0.1:6667"
+[Plug.Foo.Identity]
+Nick = ["foo", "foo_", "foo__"]
+RealName = "bar"
+Password = "e3w2q1"
+
+[Plug.Bar]
+Type = "irc"
+Channels = ["#bar", "#bar2"]
+[Plug.Bar.Connection]
+Addr = "127.0.0.1:6667"
+[Plug.Bar.Identity]
+Nick = ["bar", "bar_", "bar__"]
+RealName = "bar"
+Password = "deswaq"
+
+[Router]
+AllowCircularFlowLoops = false
+Flow = [
+     ["Foo", "Bar"],
+]

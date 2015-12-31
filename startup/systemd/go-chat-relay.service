@@ -1,0 +1,13 @@
+[Unit]
+Description = Extendable chat messages relay
+After = syslog.target network.target nss-lookup.target local-fs.target time-sync.target
+
+[Service]
+Type = simple
+User = go-chat-relay
+PIDFile = /run/go-chat-relay/go-chat-relay.pid
+Environment=TZ=UTC
+ExecStart=/usr/bin/go-chat-relay start --config /etc/go-chat-relay/config.toml
+
+[Install]
+WantedBy=multi-user.target

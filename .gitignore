@@ -1,0 +1,5 @@
+*~
+/main
+go-chat-relay
+go-chat-relay-*.tgz
+go-chat-relay-*/
